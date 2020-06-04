@@ -11,5 +11,7 @@ Run "npm install" command in SPA project directory
 Then run "ng serve" command in SPA project directory to run angular project 
 
 ******To run API******
+
 Install sdk 3.0.101 dotnet core env
+
 Run "dotnet watch run" command in the API project directory to run API
