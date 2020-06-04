@@ -1,4 +1,4 @@
-# zapsearch
+# ZapSearch
 
 This is a angular project where a simple sesrch functionality is implemented in SPA project and a correspoding API project in .NetCore 3.0.101 is also there .
 
