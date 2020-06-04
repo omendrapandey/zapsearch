@@ -1,0 +1,31 @@
+ <p></p> 
+
+<form>
+  <div class="form-group form-inline">
+      Search: <input class="form-control ml-2" type="text" placeholder="Search By Name" name="searchterm" [(ngModel)]="searchterm"/>
+  </div>
+</form>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Id</th>
+    <th scope="col" >Name</th>
+    <th scope="col" >Age</th>
+    <th scope="col" >City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let el of filteredvalues ; index as i">
+      <th scope="row">{{ i + 1 }}</th>
+      <td><ngb-highlight [result]="el.id"></ngb-highlight></td>
+      <td><ngb-highlight [result]="el.name" ></ngb-highlight></td>
+      <td><ngb-highlight [result]="el.age" ></ngb-highlight></td>
+      <td><ngb-highlight [result]="el.city" ></ngb-highlight></td>
+
+      
+      <!-- <td>{{el.name}}</td> -->
+    </tr>
+  </tbody>
+</table>
