@@ -12,7 +12,7 @@ describe('Service: Value.service', () => {
     });
   });
 
-  it('Employee service is created .. ', inject([EmployeeService], (service: EmployeeService) => {
+  it('Employee service should be created .. ', inject([EmployeeService], (service: EmployeeService) => {
     expect(service).toBeTruthy();
   }));
 });

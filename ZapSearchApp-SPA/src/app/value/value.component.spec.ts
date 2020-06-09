@@ -13,9 +13,9 @@ describe('ValueComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-	  imports: [HttpClientTestingModule], 
+      imports: [HttpClientTestingModule],
       declarations: [ ValueComponent],
-	  providers: [ EmployeeService ],
+      providers: [ EmployeeService ],
     })
     .compileComponents();
   }));
@@ -26,7 +26,7 @@ describe('ValueComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Value component should create', () => {
     expect(component).toBeTruthy();
   });
 });
