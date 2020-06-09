@@ -2,6 +2,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { EmployeeService } from './value.service';
 
 import { ValueComponent } from './value.component';
 
@@ -11,7 +13,9 @@ describe('ValueComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ValueComponent ]
+	  imports: [HttpClientTestingModule], 
+      declarations: [ ValueComponent],
+	  providers: [ EmployeeService ],
     })
     .compileComponents();
   }));
